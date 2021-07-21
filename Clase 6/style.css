@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+
+/* INICIO NAVBAR */
+.header-background {
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 5.4rem;
+}
+
+.navBar {
+    display: flex;
+    height: 5.4rem;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.navBar img {
+    height: 5.4rem;
+}
+
+.navBar div {
+    display: flex;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.navBar ul li {
+    margin: 0px 15px;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.navBar div button {
+    margin: 0px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #1a1a1a;
+}
+
+.navBar div button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.navBar div button i {
+    font-size: 30px;
+    padding: 15px;
+}
+
+.navBar div button i:hover {
+    color: black !important;
+}
+
+/* FIN NAVBAR */
+
+
+/* INICIO PRODUCTOS */
+/* Parte 1 de productos */
+#productos {
+    display: flex;
+    margin-top: 2rem;
+}
+
+#productos-categorias {
+    width: 20vw;
+    background-color: rgb(236, 236, 236);
+    padding-left: 2rem;
+
+}
+
+/* Parte 2 de productos */
+
+#productos-grid {
+    display: flex;
+    width: 75vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.productos-box {
+    display: flex;
+    width: 24vw;
+    height: 30rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.productos-box img {
+    width: 20rem;
+    align-self: center;
+}
+
+.productos-box h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.productos-box h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.productos-box h4 span {
+    color: rgb(170, 170, 170);
+    text-decoration: line-through;
+}
+
+.productos-box button {
+    border: none;
+    background-color: rgb(26, 26, 26);
+    padding: 8px;
+    border-radius: 10px;
+    align-self: stretch;
+    margin: 0px 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.productos-box button i {
+    padding: 0px 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.productos-box button:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+
+
+
+/* ESTILOS EXTRA */
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffffff;
+    height: 2.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
